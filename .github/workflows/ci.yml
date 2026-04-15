@@ -18,9 +18,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install Backend
         run: npm install
 
-      - name: Start Server
+      - name: Build Frontend
         run: |
-          npm start &
+          cd client
+          npm install
+          npm run build
