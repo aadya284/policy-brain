@@ -1,6 +1,0 @@
-- hosts: localhost
-  tasks:
-    - name: Update file using Ansible
-      copy:
-        content: "Updated by Ansible ✅"
-        dest: ./terraform_output.txt
